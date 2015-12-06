@@ -18,9 +18,12 @@ void ofApp::update(){
 void ofApp::draw(){
     ofEnableAlphaBlending();
     if(lastTouch.x!=0 && lastTouch.y!=0){
-        ofSetColor(114,176,140);
-        ofFill();
+        setColor(255,0,0);
         ofCircle(lastTouch.x,lastTouch.y, 30);
+        setColor(0,0,255)
+        drawSphere (400,400,60)
+        ofSetColor(0,255,0)
+        ofdrawBox(100,100,200,100)
     }
 }
 
